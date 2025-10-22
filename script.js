@@ -3,6 +3,7 @@ const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'N
 bands.sort((a, b)=>a.replace(/^(a |an |the)/i, "").trim().localeCompare(b.replace(/^(a |an |the)/i, "").trim()))
 
 let ul = document.createElement("ul");
+ul.setAttribute("id", "bands");
 let body = document.querySelector("body");
 body.appendChild(ul);
 
